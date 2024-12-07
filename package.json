@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "dev" : "ts-node-dev --respawn --transpile-only index.ts"
+    "dev": "ts-node-dev --respawn --transpile-only src/index.ts",
+    "api": "npx json-server --watch -p 5555 database.json"
   },
   "keywords": [],
   "author": "",
@@ -13,5 +14,8 @@
     "@types/node": "^22.9.4",
     "ts-node-dev": "^2.0.0",
     "typescript": "^5.7.2"
+  },
+  "dependencies": {
+    "axios": "^1.7.9"
   }
 }
